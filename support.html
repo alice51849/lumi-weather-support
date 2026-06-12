@@ -5,35 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support · Lumi Weather</title>
 <meta name="description" content="Support center for Lumi Weather — how to use the app, troubleshooting, FAQ and how to contact us.">
-<link rel="icon" href="logo.png">
+<link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="nav"><div class="container nav-inner">
-  <a class="brand" href="index.html"><img src="logo.png" alt="Lumi Weather"><span class="name">Lumi Weather<small>親子天氣星球</small></span></a>
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Lumi Weather"><span class="name">Lumi Weather<small>親子天氣星球</small></span></a>
   <nav class="nav-links">
     <a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a>
     <a class="cta" href="mailto:hourstag.app@gmail.com">Contact</a>
   </nav>
 </div></header>
 
-<section class="hero" style="padding:64px 0 56px">
+<section class="hero" style="padding:140px 0 90px">
+  <div class="bg" style="background-image:url('assets/sceneRainbow.jpg')"></div>
+  <div class="veil"></div>
+  <div class="cloud c1"></div><div class="cloud c2"></div>
+  <img class="hero-mascot r float" src="assets/mascotComfy.png" alt="">
   <div class="container">
-    <p class="eyebrow reveal">Support Center</p>
-    <h1 class="reveal d1">How can we help?</h1>
-    <p class="tagline reveal d2">Answers to common questions about Lumi Weather. 關於 Lumi 天氣星球的常見問題。</p>
+    <p class="eyebrow reveal in">Support Center</p>
+    <h1 class="reveal in d1">How can we help?</h1>
+    <p class="tagline reveal in d2">Answers to common questions about Lumi Weather. 關於 Lumi 天氣星球的常見問題。</p>
   </div>
 </section>
 
-<section>
+<section style="padding-top:30px">
   <div class="container legal">
-    <div class="panel">
+    <div class="panel reveal">
       <h2>Getting started</h2>
       <p>Open the app and allow location access so Lumi can fetch the weather for where you are. You will see today's kid-outing score, what to wear, the best time to go out, and play ideas. You can also add and switch between saved places such as home, school or grandparents' house.</p>
       <p class="zh">打開 App 並允許定位，Lumi 就會抓取你所在地的天氣，顯示今日外出指數、穿搭建議、最佳時段與活動點子。你也可以新增並切換常用地點（家、學校、阿公阿嬤家）。</p>
     </div>
 
-    <div class="panel">
+    <div class="panel reveal">
       <h2>Frequently asked questions</h2>
       <details open><summary>Why does the app show "Sample data"?</summary>
         <p>This badge appears when live weather cannot be loaded yet — for example before location permission is granted, or while the weather service is still activating. Once real weather is available the badge disappears. 出現「示範資料」表示尚未取得即時天氣（例如還沒開定位）。取得後徽章就會消失。</p></details>
@@ -49,7 +53,7 @@
         <p>No. Lumi Weather has no account, no ads and no third-party analytics. Everything stays on your device. See the <a href="privacy.html">Privacy Policy</a>. 不收集資料、無帳號、無廣告、無第三方分析。</p></details>
     </div>
 
-    <div class="panel">
+    <div class="panel reveal">
       <h2>Troubleshooting</h2>
       <p><strong>Weather not updating:</strong> pull down to refresh on the Today screen, and check that location access is allowed in iOS Settings.<br>
       <strong>Wrong location:</strong> add your city manually in the Places tab and select it.<br>
@@ -57,7 +61,7 @@
       <p class="zh">天氣沒更新：在今天頁下拉重新整理，並確認已開啟定位。位置不對：到地點頁手動新增城市並選取。沒有每日提醒：在 iOS 設定開啟通知，再到 App 設定開啟提醒。</p>
     </div>
 
-    <div class="panel">
+    <div class="panel reveal">
       <h2>Contact us</h2>
       <p>Email <a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>. When reporting an issue, it helps to include your device model, iOS version, the app version (shown at the bottom of Settings), and a short description or screenshot.</p>
       <p class="zh">來信 hourstag.app@gmail.com。回報問題時請附上裝置型號、iOS 版本、App 版本（設定頁最下方）與簡短描述或截圖。</p>
@@ -66,9 +70,22 @@
   </div>
 </section>
 
-<footer><div class="container">
-  <div class="foot-links"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a></div>
-  <p>Designed for parents, guardians and caregivers. Weather data by Apple WeatherKit. © 2026 Cait518.</p>
-</div></footer>
+<footer>
+  <span class="star" style="top:18%; left:12%"></span><span class="star" style="top:34%; left:28%"></span>
+  <span class="star" style="top:14%; left:56%"></span><span class="star" style="top:42%; left:74%"></span>
+  <span class="star" style="top:22%; left:88%"></span>
+  <div class="container">
+    <div class="brandline"><img src="assets/logo.png" alt=""><b>Lumi Weather</b></div>
+    <div class="foot-links"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a></div>
+    <p>Designed for parents, guardians and caregivers. Weather data by Apple WeatherKit. © 2026 Cait518.</p>
+  </div>
+</footer>
+
+<button id="musicBtn" class="music" type="button" aria-pressed="false" aria-label="Play background music">
+  <span class="note">♪</span>
+  <span class="eq"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+  <span class="hint">App 同款音樂 · Music from the app</span>
+</button>
+<script src="site.js"></script>
 </body>
 </html>

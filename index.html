@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumi Weather · Support &amp; Privacy</title>
+<title>Lumi Weather · Kid-Friendly Weather Companion</title>
 <meta name="description" content="Official site for Lumi Weather — a kid-friendly weather companion that helps parents decide if today is good for going out with their child. Support, FAQ and privacy policy. 親子天氣 App 官方支援與隱私中心。">
 <meta property="og:title" content="Lumi Weather · Kid-Friendly Weather">
 <meta property="og:description" content="Helps parents decide if today is good to take the kids out — outing score, outfit tips and the best window.">
-<meta property="og:image" content="logo.png">
-<link rel="icon" href="logo.png">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="nav"><div class="container nav-inner">
   <a class="brand" href="index.html">
-    <img src="logo.png" alt="Lumi Weather">
+    <img src="assets/logo.png" alt="Lumi Weather">
     <span class="name">Lumi Weather<small>親子天氣星球</small></span>
   </a>
   <nav class="nav-links">
     <a href="#features">Features</a>
+    <a href="#world">World</a>
     <a href="support.html">Support</a>
     <a href="privacy.html">Privacy</a>
     <a class="cta" href="mailto:hourstag.app@gmail.com">Contact</a>
@@ -26,21 +27,40 @@
 </div></header>
 
 <section class="hero">
+  <div class="bg" style="background-image:url('assets/sceneSunny.jpg')"></div>
+  <div class="veil"></div>
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <span class="spark twinkle" style="top:22%; left:18%"></span>
+  <span class="spark twinkle" style="top:16%; right:22%; animation-delay:1.2s"></span>
+  <span class="spark twinkle" style="top:38%; right:12%; animation-delay:2.1s"></span>
+  <span class="spark twinkle" style="top:46%; left:9%; animation-delay:.6s"></span>
+  <img class="hero-mascot l float-slow" src="assets/mascotPicnic.png" alt="">
+  <img class="hero-mascot r float" src="assets/mascotSunny.png" alt="">
   <div class="container">
-    <img class="logo float" src="logo.png" alt="Lumi Weather icon">
-    <p class="eyebrow reveal">Kid-Friendly Weather Companion</p>
-    <h1 class="reveal d1">Is today good to<br>take the kids out?</h1>
-    <p class="tagline reveal d2">Lumi Weather turns the forecast into one clear answer — a kid-outing score, what to wear, the best time to go out, and what to play. 一打開就知道今天適不適合帶小孩出門。</p>
-    <div class="btns reveal d3">
+    <img class="logo float reveal in" src="assets/logo.png" alt="Lumi Weather icon">
+    <p class="eyebrow reveal in">Kid-Friendly Weather Companion</p>
+    <h1 class="reveal in d1">Is today good to<br><span class="grad-text">take the kids out?</span></h1>
+    <p class="tagline reveal in d2">Lumi Weather turns the forecast into one clear answer — a kid-outing score, what to wear, the best time to go out, and what to play. 一打開就知道今天適不適合帶小孩出門。</p>
+    <div class="btns reveal in d3">
       <a class="btn primary" href="support.html">Get Support</a>
       <a class="btn ghost" href="privacy.html">Privacy Policy</a>
     </div>
   </div>
 </section>
 
+<div class="container ribbon reveal">
+  <div class="ribbon-inner">
+    <div class="stat"><b>0–100</b><span>Kid-Outing Score</span></div>
+    <div class="stat"><b>100+</b><span>Play Ideas</span></div>
+    <div class="stat"><b>33</b><span>Living Sky Scenes</span></div>
+    <div class="stat"><b>4</b><span>Languages</span></div>
+    <div class="stat"><b>0</b><span>Data Collected</span></div>
+  </div>
+</div>
+
 <section id="features">
   <div class="container">
-    <div class="section-tin">
+    <div class="section-tin reveal">
       <p class="eyebrow">What it does</p>
       <h2>Made for the morning decision</h2>
       <p class="zh">為每天早上「能不能帶孩子出門」而生</p>
@@ -57,23 +77,78 @@
 </section>
 
 <section style="padding-top:0">
-  <div class="container">
-    <div class="panel reveal">
-      <h2>Privacy promise</h2>
-      <p>Lumi Weather does not require an account and does not collect personal data. Location is used only to fetch local weather and is never uploaded to our servers, sold, or used for advertising. Weather data is provided by Apple WeatherKit.</p>
-      <p class="zh">不需要帳號、不收集個人資料。定位僅用於取得當地天氣，不會上傳、販售或用於廣告。天氣資料由 Apple WeatherKit 提供。</p>
-      <p style="margin-top:14px"><a class="btn ghost" href="privacy.html">Read the full Privacy Policy →</a></p>
+  <div class="container showcase">
+    <div class="reveal">
+      <p class="eyebrow">A companion, not a chart</p>
+      <h2>Lumi lives in the weather with you</h2>
+      <p>Lumi dresses for today's forecast, plays in the rain, builds snowmen and watches the stars — while the score, the best window and the checklist keep the answer clear for parents.</p>
+      <p class="zh">Lumi 會隨天氣換裝、陪孩子看雨看雪看星星；外出指數、最佳時段與檢查清單則把答案留給爸媽。</p>
+      <ul class="checks">
+        <li>One screen, one clear answer 一眼得到答案</li>
+        <li>Age-aware suggestions 依年齡調整建議</li>
+        <li>Saved places for home &amp; school 常用地點快速切換</li>
+        <li>English · 繁體中文 · 日本語 · 한국어</li>
+      </ul>
+    </div>
+    <div class="reveal d1">
+      <div class="phone float-slow">
+        <img src="assets/shot_home.jpg" alt="Lumi Weather app — Today screen with kid-outing score">
+        <img class="phone-buddy sway" src="assets/mascotRaincoat.png" alt="">
+      </div>
     </div>
   </div>
 </section>
 
-<footer><div class="container">
-  <div class="foot-links">
-    <a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a>
-    <a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>
+<section id="world" style="padding-top:0">
+  <div class="container">
+    <div class="section-tin reveal">
+      <p class="eyebrow">A living sky</p>
+      <h2>33 scenes that follow the real weather</h2>
+      <p class="zh">隨真實天氣切換的 33 個場景——晴、雨、雪、夜空與彩虹</p>
+    </div>
+    <div class="gallery">
+      <div class="scene reveal"><img src="assets/sceneSunny.jpg" alt="Sunny scene"><b>Sunny</b></div>
+      <div class="scene reveal d1"><img src="assets/sceneRainbow.jpg" alt="Rainbow scene"><b>After the rain</b></div>
+      <div class="scene reveal d2"><img src="assets/sceneSnow.jpg" alt="Snow scene"><b>Snow day</b></div>
+      <div class="scene reveal d3"><img src="assets/sceneNight.jpg" alt="Night scene"><b>Starry night</b></div>
+    </div>
   </div>
-  <p>Lumi Weather is designed for parents, guardians and caregivers.<br>
-  Weather data by Apple WeatherKit. © 2026 Cait518. All rights reserved.</p>
-</div></footer>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="night reveal">
+      <div class="bg" style="background-image:url('assets/sceneNight.jpg')"></div>
+      <div class="veil"></div>
+      <p class="eyebrow" style="color:var(--gold-light)">Privacy promise</p>
+      <h2>Your family stays yours</h2>
+      <p>Lumi Weather does not require an account and does not collect personal data. Location is used only to fetch local weather and is never uploaded to our servers, sold, or used for advertising. Weather data is provided by Apple WeatherKit.</p>
+      <p class="zh">不需要帳號、不收集個人資料。定位僅用於取得當地天氣，不會上傳、販售或用於廣告。天氣資料由 Apple WeatherKit 提供。</p>
+      <p style="margin-top:22px"><a class="btn primary" href="privacy.html">Read the full Privacy Policy</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="star" style="top:18%; left:12%"></span><span class="star" style="top:34%; left:28%"></span>
+  <span class="star" style="top:14%; left:56%"></span><span class="star" style="top:42%; left:74%"></span>
+  <span class="star" style="top:22%; left:88%"></span><span class="star" style="top:58%; left:8%"></span>
+  <div class="container">
+    <div class="brandline"><img src="assets/logo.png" alt=""><b>Lumi Weather</b></div>
+    <div class="foot-links">
+      <a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a>
+      <a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>
+    </div>
+    <p>Lumi Weather is designed for parents, guardians and caregivers.<br>
+    Weather data by Apple WeatherKit. © 2026 Cait518. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="musicBtn" class="music" type="button" aria-pressed="false" aria-label="Play background music">
+  <span class="note">♪</span>
+  <span class="eq"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+  <span class="hint">App 同款音樂 · Music from the app</span>
+</button>
+<script src="site.js"></script>
 </body>
 </html>
