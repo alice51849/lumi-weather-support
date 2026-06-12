@@ -34,10 +34,13 @@
   <span class="spark twinkle" style="top:16%; right:22%; animation-delay:1.2s"></span>
   <span class="spark twinkle" style="top:38%; right:12%; animation-delay:2.1s"></span>
   <span class="spark twinkle" style="top:46%; left:9%; animation-delay:.6s"></span>
+  <span class="spark twinkle" style="top:30%; left:30%; animation-delay:1.7s"></span>
   <img class="hero-mascot l float-slow" src="assets/mascotPicnic.png" alt="">
   <img class="hero-mascot r float" src="assets/mascotSunny.png" alt="">
   <div class="container">
-    <img class="logo float reveal in" src="assets/logo.png" alt="Lumi Weather icon">
+    <span class="logo-wrap reveal in"><span class="halo"></span>
+      <img class="logo float" src="assets/logo.png" alt="Lumi Weather icon" style="width:128px;height:128px;border-radius:32px;box-shadow:var(--shadow-lg)">
+    </span>
     <p class="eyebrow reveal in">Kid-Friendly Weather Companion</p>
     <h1 class="reveal in d1">Is today good to<br><span class="grad-text">take the kids out?</span></h1>
     <p class="tagline reveal in d2">Lumi Weather turns the forecast into one clear answer — a kid-outing score, what to wear, the best time to go out, and what to play. 一打開就知道今天適不適合帶小孩出門。</p>
@@ -45,6 +48,7 @@
       <a class="btn primary" href="support.html">Get Support</a>
       <a class="btn ghost" href="privacy.html">Privacy Policy</a>
     </div>
+    <div class="reveal in d4"><span class="pill"><span class="dot"></span>Coming soon to the App Store · 即將上架</span></div>
   </div>
 </section>
 
@@ -53,12 +57,27 @@
     <div class="stat"><b>0–100</b><span>Kid-Outing Score</span></div>
     <div class="stat"><b>100+</b><span>Play Ideas</span></div>
     <div class="stat"><b>33</b><span>Living Sky Scenes</span></div>
-    <div class="stat"><b>4</b><span>Languages</span></div>
+    <div class="stat"><b>41</b><span>Lumi Outfits</span></div>
     <div class="stat"><b>0</b><span>Data Collected</span></div>
   </div>
 </div>
 
-<section id="features">
+<div class="parade" aria-hidden="true">
+  <div class="parade-track">
+    <img src="assets/mascotSunny.png" alt=""><img src="assets/mascotRaincoat.png" alt="">
+    <img src="assets/mascotKite.png" alt=""><img src="assets/mascotSnowman.png" alt="">
+    <img src="assets/mascotPopsicle.png" alt=""><img src="assets/mascotStar.png" alt="">
+    <img src="assets/mascotCocoa.png" alt=""><img src="assets/mascotPuddle.png" alt="">
+    <img src="assets/mascotRainbow.png" alt=""><img src="assets/mascotScooter.png" alt="">
+    <img src="assets/mascotSunny.png" alt=""><img src="assets/mascotRaincoat.png" alt="">
+    <img src="assets/mascotKite.png" alt=""><img src="assets/mascotSnowman.png" alt="">
+    <img src="assets/mascotPopsicle.png" alt=""><img src="assets/mascotStar.png" alt="">
+    <img src="assets/mascotCocoa.png" alt=""><img src="assets/mascotPuddle.png" alt="">
+    <img src="assets/mascotRainbow.png" alt=""><img src="assets/mascotScooter.png" alt="">
+  </div>
+</div>
+
+<section id="features" class="aurora">
   <div class="container">
     <div class="section-tin reveal">
       <p class="eyebrow">What it does</p>
@@ -77,6 +96,21 @@
 </section>
 
 <section style="padding-top:0">
+  <div class="container">
+    <div class="section-tin reveal">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps to a great day out</h2>
+      <p class="zh">三步驟，安心出門</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><img src="assets/mascotComfy.png" alt=""><span class="num"></span><h3>Open the app</h3><p>Lumi greets you with today's sky, dressed for the weather. 打開 App，Lumi 已換好今天的裝。</p></div>
+      <div class="step reveal d1"><img src="assets/mascotSunny.png" alt=""><span class="num"></span><h3>Read one number</h3><p>The kid-outing score and the best window tell you when to go. 一個分數加最佳時段，直接告訴你何時出門。</p></div>
+      <div class="step reveal d2"><img src="assets/mascotKite.png" alt=""><span class="num"></span><h3>Pack &amp; play</h3><p>Tick the outfit checklist and pick a play idea on the way out. 勾完清單、帶上玩法，出發。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
   <div class="container showcase">
     <div class="reveal">
       <p class="eyebrow">A companion, not a chart</p>
@@ -87,13 +121,17 @@
         <li>One screen, one clear answer 一眼得到答案</li>
         <li>Age-aware suggestions 依年齡調整建議</li>
         <li>Saved places for home &amp; school 常用地點快速切換</li>
-        <li>English · 繁體中文 · 日本語 · 한국어</li>
+        <li>Day and night, sun and snow 日夜晴雪都陪著你</li>
       </ul>
+      <div class="langs"><span>English</span><span>繁體中文</span><span>日本語</span><span>한국어</span></div>
     </div>
     <div class="reveal d1">
-      <div class="phone float-slow">
-        <img src="assets/shot_home.jpg" alt="Lumi Weather app — Today screen with kid-outing score">
-        <img class="phone-buddy sway" src="assets/mascotRaincoat.png" alt="">
+      <div class="phones">
+        <div class="phone back"><img src="assets/shot_night.jpg" alt="Lumi Weather — starry night scene"></div>
+        <div class="phone front float-slow">
+          <img src="assets/shot_home.jpg" alt="Lumi Weather app — Today screen with kid-outing score">
+          <img class="phone-buddy sway" src="assets/mascotRaincoat.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -104,12 +142,16 @@
     <div class="section-tin reveal">
       <p class="eyebrow">A living sky</p>
       <h2>33 scenes that follow the real weather</h2>
-      <p class="zh">隨真實天氣切換的 33 個場景——晴、雨、雪、夜空與彩虹</p>
+      <p class="zh">隨真實天氣切換的 33 個場景——晴、雨、雪、極光與星空</p>
     </div>
-    <div class="gallery">
+    <div class="gallery g8">
       <div class="scene reveal"><img src="assets/sceneSunny.jpg" alt="Sunny scene"><b>Sunny</b></div>
       <div class="scene reveal d1"><img src="assets/sceneRainbow.jpg" alt="Rainbow scene"><b>After the rain</b></div>
-      <div class="scene reveal d2"><img src="assets/sceneSnow.jpg" alt="Snow scene"><b>Snow day</b></div>
+      <div class="scene reveal d2"><img src="assets/sceneClearDusk.jpg" alt="Dusk scene"><b>Golden dusk</b></div>
+      <div class="scene reveal d3"><img src="assets/sceneStorm.jpg" alt="Storm scene"><b>Thunderstorm</b></div>
+      <div class="scene reveal"><img src="assets/sceneSnow.jpg" alt="Snow scene"><b>Snow day</b></div>
+      <div class="scene reveal d1"><img src="assets/sceneHeatwave.jpg" alt="Heatwave scene"><b>Heatwave</b></div>
+      <div class="scene reveal d2"><img src="assets/sceneAurora.jpg" alt="Aurora scene"><b>Aurora</b></div>
       <div class="scene reveal d3"><img src="assets/sceneNight.jpg" alt="Night scene"><b>Starry night</b></div>
     </div>
   </div>
@@ -120,6 +162,8 @@
     <div class="night reveal">
       <div class="bg" style="background-image:url('assets/sceneNight.jpg')"></div>
       <div class="veil"></div>
+      <span class="spark twinkle" style="top:18%; left:14%"></span>
+      <span class="spark twinkle" style="top:26%; right:16%; animation-delay:1.3s"></span>
       <p class="eyebrow" style="color:var(--gold-light)">Privacy promise</p>
       <h2>Your family stays yours</h2>
       <p>Lumi Weather does not require an account and does not collect personal data. Location is used only to fetch local weather and is never uploaded to our servers, sold, or used for advertising. Weather data is provided by Apple WeatherKit.</p>
@@ -133,14 +177,27 @@
   <span class="star" style="top:18%; left:12%"></span><span class="star" style="top:34%; left:28%"></span>
   <span class="star" style="top:14%; left:56%"></span><span class="star" style="top:42%; left:74%"></span>
   <span class="star" style="top:22%; left:88%"></span><span class="star" style="top:58%; left:8%"></span>
+  <span class="star" style="top:66%; left:46%"></span><span class="star" style="top:12%; left:38%"></span>
   <div class="container">
-    <div class="brandline"><img src="assets/logo.png" alt=""><b>Lumi Weather</b></div>
-    <div class="foot-links">
-      <a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a>
-      <a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>
+    <div class="foot-grid">
+      <div>
+        <div class="brandline left"><img src="assets/logo.png" alt=""><b>Lumi Weather</b></div>
+        <p>A kid-friendly weather companion that turns the forecast into one clear answer for parents, guardians and caregivers.</p>
+        <p class="zh" style="color:rgba(255,255,255,.45)">把天氣預報變成爸媽要的那一個答案。</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="support.html">Support Center</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>
+        <p style="margin-top:10px">English · 繁體中文<br>日本語 · 한국어</p>
+      </div>
     </div>
-    <p>Lumi Weather is designed for parents, guardians and caregivers.<br>
-    Weather data by Apple WeatherKit. © 2026 Cait518. All rights reserved.</p>
+    <p class="legalline">Weather data by Apple WeatherKit. Forecasts are estimates; suggestions are general guidance for parents.<br>© 2026 Cait518. All rights reserved.</p>
   </div>
 </footer>
 
