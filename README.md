@@ -33,3 +33,21 @@ Used for the App Store Connect Support URL, Privacy Policy URL and Marketing URL
 ## Notes
 - No third-party analytics, ads or external trackers are used.
 - The privacy policy reflects a fully on-device app: no account, no data collection, location used only to fetch weather via Apple WeatherKit.
+
+<!-- BEGIN MANAGED APP STORE LINKS -->
+# Lumi Weather - Official Support
+
+Official support resources and verified App Store links for **Lumi Weather**.
+
+## Get the app
+
+Weather + a kid-outing score, tuned to their age.
+
+- **[View Lumi Weather on the App Store](https://apps.apple.com/app/id6779552704)**
+- [Read the product guide](https://alice51849.github.io/ios-app-guide/guides/lumiweather.html)
+
+## Support and privacy
+
+- [Open the official support site](https://alice51849.github.io/lumi-weather-support/)
+
+<!-- END MANAGED APP STORE LINKS -->
