@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lumi天氣星球 親子出遊指數 — 天氣預報・降雨紫外線</title>
+<meta name="description" content="一眼就知道今天適不適合帶孩子出門。精準每小時與一週預報,降雨、紫外線、最佳外出時段與穿搭建議。無廣告、無訂閱、買斷制,重視隱私,還有桌面小工具。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://alice51849.github.io/lumi-weather-support/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/lumi-weather-support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/lumi-weather-support/zh-Hant/">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/lumi-weather-support/zh-Hans/">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/lumi-weather-support/ja/">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/lumi-weather-support/ko/">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/lumi-weather-support/de-DE/">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/lumi-weather-support/fr-FR/">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/lumi-weather-support/es-ES/">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/lumi-weather-support/pt-BR/">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/lumi-weather-support/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="Lumi天氣星球 親子出遊指數 — 天氣預報・降雨紫外線">
+<meta property="og:description" content="一眼就知道今天適不適合帶孩子出門。精準每小時與一週預報,降雨、紫外線、最佳外出時段與穿搭建議。無廣告、無訂閱、買斷制,重視隱私,還有桌面小工具。">
+<meta property="og:url" content="https://alice51849.github.io/lumi-weather-support/zh-Hant/">
+<style>
+:root{--ink:#26242f;--muted:#66627a;--faint:#8d889d;--a1:#2d5e96;--a2:#323ea6;--a3:#3aa8a7;--line:rgba(45,94,150,0.18);--shadow:0 22px 60px rgba(45,94,150,0.12)}
+*{box-sizing:border-box}
+html{background:#fbfbfe;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"Noto Sans TC","Noto Sans JP","Noto Sans KR",sans-serif;
+background:radial-gradient(circle at 8% 0%,rgba(45,94,150,0.16),transparent 30rem),radial-gradient(circle at 92% 6%,rgba(58,168,167,0.16),transparent 32rem),linear-gradient(150deg,#fdfcff 0%,#f7f7fd 48%,#f3f7ff 100%);background-attachment:fixed}
+a{color:var(--a1);text-decoration:none}
+a:hover{color:var(--a3)}
+a:focus-visible,summary:focus-visible{outline:3px solid rgba(45,94,150,0.4);outline-offset:4px}
+.shell{position:relative;width:min(1060px,calc(100% - 40px));margin:auto}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;color:var(--ink);font-weight:840;letter-spacing:-.02em}
+.brand img{width:34px;height:34px;border-radius:11px}
+.primary-nav{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.66);box-shadow:0 10px 28px rgba(45,94,150,0.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.primary-nav a{padding:8px 12px;border-radius:11px;color:var(--muted);font-size:14px;font-weight:700;white-space:nowrap}
+.primary-nav a[aria-current="page"]{color:var(--a1);background:rgba(45,94,150,0.12)}
+.language{position:relative}
+.language summary{display:flex;min-height:44px;align-items:center;gap:7px;padding:8px 13px;border:1px solid var(--line);border-radius:15px;color:var(--ink);background:rgba(255,255,255,.7);font-size:14px;font-weight:750;cursor:pointer;list-style:none;white-space:nowrap}
+.language summary::-webkit-details-marker{display:none}
+.language-panel{position:absolute;z-index:10;inset-inline-end:0;top:calc(100% + 9px);display:grid;width:min(560px,calc(100vw - 28px));grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:12px;border:1px solid var(--line);border-radius:20px;background:rgba(253,252,255,.98);box-shadow:var(--shadow)}
+.language-panel a{padding:8px 10px;border-radius:10px;color:var(--muted);font-size:13px;font-weight:650}
+.language-panel a:hover,.language-panel a[aria-current="true"]{color:var(--a1);background:rgba(45,94,150,0.12)}
+main{padding-bottom:8px}
+.page-hero{padding:18px 0 26px}
+.eyebrow{margin:0;color:var(--faint);font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+h1{margin:14px 0 8px;font-size:clamp(29px,5vw,43px);font-weight:850;letter-spacing:-.02em;line-height:1.18}
+.gradient-text{background:linear-gradient(118deg,var(--a1),var(--a2) 52%,var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin:0;max-width:64ch;color:var(--muted);font-size:18px}
+.updated{margin:14px 0 0;color:var(--faint);font-size:14px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));padding-bottom:24px}
+.card{margin:0;padding:22px 24px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.74);box-shadow:var(--shadow);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.card h2{margin:0 0 8px;font-size:19px;font-weight:820;letter-spacing:-.01em}
+.card h3{margin:16px 0 4px;font-size:16px;font-weight:790}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card p + p{margin-top:9px}
+.card ul{margin:9px 0 0;padding-inline-start:19px;color:var(--muted);font-size:15px}
+.card li{margin-bottom:6px}
+.card ol{margin:9px 0 0;padding-inline-start:20px;color:var(--muted);font-size:15px}
+.wide{grid-column:1/-1}
+.faq{border-top:1px solid var(--line);padding:14px 0 2px}
+.faq:first-of-type{border-top:0;padding-top:2px}
+.faq summary{cursor:pointer;font-size:16px;font-weight:790;list-style:none;padding-inline-end:20px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;inset-inline-end:0;color:var(--a1);font-weight:800}
+.faq[open] summary::after{content:"–"}
+.faq p{margin:9px 0 6px;color:var(--muted);font-size:15px}
+.cta{display:inline-flex;align-items:center;gap:9px;min-height:44px;margin-top:16px;padding:12px 24px;border-radius:15px;color:#fff;font-size:16px;font-weight:820;background:linear-gradient(135deg,var(--a1),var(--a3));box-shadow:0 12px 28px rgba(45,94,150,0.12)}
+.cta:hover{color:#fff;transform:translateY(-1px)}
+.cta-quiet{display:inline-flex;align-items:center;min-height:44px;margin:16px 0 0 10px;padding:12px 20px;border:1px solid var(--line);border-radius:15px;color:var(--muted);font-weight:760;background:rgba(255,255,255,.7)}
+.note{margin:18px 0 0;color:var(--faint);font-size:13.5px;max-width:74ch}
+.site-footer{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:12px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--faint);font-size:14px}
+.footer-links{display:flex;flex-wrap:wrap;gap:8px 16px}
+@media (max-width:860px){.language-panel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.primary-nav{max-width:100%;overflow-x:auto}.language summary span{display:none}.language-panel{position:fixed;inset:76px 12px auto;width:auto;max-height:70vh;overflow:auto}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="../logo.png" alt="" width="34" height="34"><span>Lumi天氣星球 親子出遊指數</span></a>
+  <nav class="primary-nav"><a href="index.html" aria-current="page">首頁</a><a href="support.html">支援</a><a href="privacy.html">隱私權</a><a href="../help.zh-Hant.html">說明與常見問題</a></nav>
+  <details class="language"><summary aria-label="語言">🌐 <span>繁體中文</span></summary><div class="language-panel"><a href="https://alice51849.github.io/lumi-weather-support/" hreflang="en">English</a><a href="https://alice51849.github.io/lumi-weather-support/zh-Hant/" hreflang="zh-Hant" aria-current="true">繁體中文</a><a href="https://alice51849.github.io/lumi-weather-support/zh-Hans/" hreflang="zh-Hans">简体中文</a><a href="https://alice51849.github.io/lumi-weather-support/ja/" hreflang="ja">日本語</a><a href="https://alice51849.github.io/lumi-weather-support/ko/" hreflang="ko">한국어</a><a href="https://alice51849.github.io/lumi-weather-support/de-DE/" hreflang="de-DE">Deutsch</a><a href="https://alice51849.github.io/lumi-weather-support/fr-FR/" hreflang="fr-FR">Français</a><a href="https://alice51849.github.io/lumi-weather-support/es-ES/" hreflang="es-ES">Español</a><a href="https://alice51849.github.io/lumi-weather-support/pt-BR/" hreflang="pt-BR">Português (Brasil)</a></div></details>
+</header>
+<main>
+<section class="page-hero"><p class="eyebrow">官方支援網站</p><h1><span class="gradient-text">Lumi天氣星球 親子出遊指數</span></h1><p class="lead">天氣預報・降雨紫外線</p><a class="cta" href="https://apps.apple.com/app/id6779552704">在 App Store 檢視</a><a class="cta-quiet" href="support.html">查看支援說明</a></section>
+<div class="grid">
+<section class="card wide"><h2>Lumi天氣星球 親子出遊指數 是什麼</h2><p>有些早晨，你抱著扭來扭去的孩子站在窗邊，心裡只有一個小小的擔心：今天會不會太冷、太熱、太濕，不適合帶他出門？</p><p>Lumi 天氣星球，就是為這一刻而生。</p><p>它把一整面冰冷的數字，變成一句溫柔的答案。看一眼，你就知道今天是讓孩子在公園奔跑的日子，還是窩在家裡也很幸福的日子。而一隻叫 Lumi 的小傢伙，會依照天空的模樣換上裝扮——戴上遮陽帽、撐起小傘、或圍上圍巾——一直陪在你和孩子身邊。</p></section>
+<section class="card"><h2>功能一覽</h2><ul><li>Lumi 綜合體感溫度、紫外線、降雨機率與風速，再依孩子年齡的敏感程度仔細衡量：越小的寶寶，標準就越溫柔。最後給你一個清楚的外出指數，和一句好懂的判斷。點一下，每一分背後的理由都攤開來解釋給你看——不藏算式、沒有黑盒子，是一種讓你打從心裡安心的誠實。</li><li>Lumi 會找出今天最適合外出的黃金時段，讓你不錯過一天裡最舒服的那幾個小時；再依當下天氣與孩子年齡，給你一份會自己變化的出門檢查清單，從帽子、薄外套到雨具，該帶的都幫你想好；還有超過一百種親子玩法，晴天、雨天與每一種天氣都有，每天更新，靈感不再卡關。</li><li>日出時天空泛著暖光，雨輕輕敲著窗，雪緩緩地、大大地飄落，夜裡星空安靜閃爍。Lumi 會隨著天氣戴上遮陽帽、躲進傘下、或縮進圍巾裡，連還看不懂字的孩子，都能指著畫面一眼讀懂今天的天氣。這種細膩，通常只在更昂貴的 App 裡才感受得到。</li><li>Lumi 天氣星球，是給每天把孩子放在心上的家長、阿公阿嬤與照顧者的。孩子越小，它的建議就越輕柔、越謹慎。它尊重你的早晨、你的時間，還有你那份不想被打擾的安心。</li></ul></section>
+<section class="card"><h2>隱私權重點</h2><p>重點摘要:不需要帳號、不收集個人資料、無第三方廣告、無第三方分析。</p><p><a href="privacy.html">隱私權 →</a></p></section>
+</div>
+<p class="note">本頁的功能敘述取自 Lumi天氣星球 親子出遊指數 在 App Store 的產品頁文案,可能隨版本更新而變動。</p>
+</main>
+<footer class="site-footer">
+  <span>© 2026 Lumi天氣星球 親子出遊指數</span>
+  <span class="footer-links"><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a><span>本站不使用第三方追蹤、廣告或分析工具。</span></span>
+</footer>
+</div>
+</body>
+</html>
