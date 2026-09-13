@@ -1,6 +1,6 @@
 # Lumi Weather — Support &amp; Privacy site
 
-Static GitHub Pages site for the **Lumi Weather** iOS app (kid-friendly weather companion for parents).
+Static GitHub Pages site for the **Lumi Weather** iOS app (a weather app that tells you at a glance whether today is a good day to go out).
 Used for the App Store Connect Support URL, Privacy Policy URL and Marketing URL.
 
 ## Files
@@ -41,7 +41,7 @@ Official support resources and verified App Store links for **Lumi Weather**.
 
 ## Get the app
 
-Weather + a kid-outing score, tuned to their age.
+Weather + a 0–100 outing score, what to wear and the best time to go out.
 
 - **[View Lumi Weather on the App Store](https://apps.apple.com/app/id6779552704)**
 - [Read the product guide](https://alice51849.github.io/ios-app-guide/guides/lumiweather.html)
