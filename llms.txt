@@ -7,6 +7,10 @@
 - [Lumi Weather on the App Store](https://apps.apple.com/app/id6779552704)
 - [Lumi Weather independent guide](https://alice51849.github.io/ios-app-guide/guides/lumiweather.html)
 
+## Guides
+
+- [What to wear today: outfit guide by feels-like temperature, rain and UV](https://open.cait518.cc/lumi-weather-support/outfit.html)
+
 ## Support
 
 - [Help, FAQ and troubleshooting](https://open.cait518.cc/lumi-weather-support/help.html)
