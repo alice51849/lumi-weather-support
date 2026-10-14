@@ -82,7 +82,7 @@
   <div class="container">
     <p class="eyebrow reveal in">Privacy Policy</p>
     <h1 class="reveal in d1">Your privacy<br>comes first</h1>
-    <p class="tagline reveal in d2 updated" style="color:rgba(255,255,255,.75)">Last updated: 3 October 2026 · Applies to the Lumi Weather iOS app</p>
+    <p class="tagline reveal in d2 updated" style="color:rgba(255,255,255,.75)">Last updated: 14 October 2026 · Applies to the Lumi Weather iOS and Android apps</p>
   </div>
 </section>
 
@@ -123,10 +123,20 @@
     <h2>Changes to this policy</h2>
     <p>If the app's features change in a way that affects this policy, we will update this page and revise the "Last updated" date above. Continued use of the app after an update means you accept the revised policy.</p>
 
-    <h2>Google Play (Android)</h2>
-    <p>Lumi Weather is also available as a separate native Android app on Google Play (package <code>com.alice51849.LumiWeather</code>). The Android app has no account, no advertising and no third-party analytics, the same as iOS. Two implementation details differ: weather data on Android comes from MET Norway's Locationforecast API (CC BY 4.0) instead of Apple WeatherKit — only your rounded coordinates are sent to fetch the forecast, nothing else is uploaded — and there is no Apple Watch app, Live Activity or Lock Screen widget on Android (a home screen widget is available instead). Location permission is requested only when you tap "use current location," never automatically. The one-time in-app purchase is processed by Google Play Billing; we do not receive or store your payment details. Everything else in this policy applies equally to the Android app.</p>
+    <h2 id="google-play-android">Google Play (Android)</h2>
+    <p>Lumi Weather is also available as a separate native Android app on Google Play (package <code>com.alice51849.LumiWeather</code>). The Android app has no account, no advertising, no third-party analytics and no crash-reporting or tracking SDKs, the same as iOS. Where the Android app differs:</p>
+    <ul>
+      <li><strong>Location:</strong> the Android app asks only for approximate location (Android's <code>ACCESS_COARSE_LOCATION</code>; never precise/GPS location and never background location), and only when you tap "Use current location" — never automatically. You can use the app without it by adding or searching for places manually.</li>
+      <li><strong>Weather data:</strong> forecasts come from MET Norway's Locationforecast API (CC BY 4.0) instead of Apple WeatherKit. To get a forecast, the app sends only the coordinates of the place you are viewing — your approximate location, or a place you added — rounded to 4 decimal places, over an encrypted HTTPS connection (as with any internet request, MET Norway also sees your IP address). The home screen widget refreshes the forecast for your selected place the same way. Nothing else is uploaded.</li>
+      <li><strong>Place names and search:</strong> instead of Apple's geocoding service, the name of your current area and the places you search for are looked up with the Android geocoding service built into your device (on most devices provided by Google), which receives those coordinates or the search text you type.</li>
+      <li><strong>Google Play Data safety:</strong> in Google Play's terms, this means the Android app "collects" approximate location and the place-search text you type, only for app functionality. This data is processed ephemerally — used only to return the forecast or place names — and is not stored on any server we control, not sold, not shared for advertising, analytics or any other purpose, and always encrypted in transit.</li>
+      <li><strong>Purchases:</strong> the one-time in-app purchase is processed by Google Play Billing; we do not receive or store your payment details.</li>
+      <li><strong>Deleting your data:</strong> we keep none of your data on our side, so there is nothing for us to delete. Your settings, saved places and the last loaded forecast are stored only on your device and are removed when you delete them in the app, clear the app's storage or uninstall it. For any data request, email <!--email_off--><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a><!--/email_off-->.</li>
+      <li>There is no Apple Watch app, Live Activity or Lock Screen widget on Android (a home screen widget is available instead).</li>
+    </ul>
+    <p>Everything else in this policy applies equally to the Android app.</p>
 
-    <p class="zh" style="margin-top:28px">本頁英文版為準。中文摘要：Lumi 天氣星球是一般大眾都能使用的天氣 App；不需帳號、不收集個人資料、無廣告、無第三方分析。定位只在你使用 App 期間用來取得當地天氣，地名顯示使用 Apple 的地理編碼服務；我們不會把位置存到自己的伺服器、不販售、不用於廣告，可隨時在 iOS 設定中關閉。天氣資料由 Apple WeatherKit 提供，建議僅供參考。App 內購買由 Apple 透過 App Store 處理，我們不會取得付款資料。設定、常用地點與解鎖狀態只存在你的裝置上，刪除 App 即一併清除。隱私問題請來信 <!--email_off-->hourstag.app@gmail.com<!--/email_off-->。Android 版（Google Play，package <code>com.alice51849.LumiWeather</code>）隱私作法相同；天氣資料改由 MET Norway 提供，僅在你主動按「使用目前位置」時才請求定位權限，無 Apple Watch／鎖定畫面小工具（改提供桌面 Widget），App 內購買改由 Google Play Billing 處理。</p>
+    <p class="zh" style="margin-top:28px">本頁英文版為準。中文摘要：Lumi 天氣星球是一般大眾都能使用的天氣 App；不需帳號、不收集個人資料、無廣告、無第三方分析。定位只在你使用 App 期間用來取得當地天氣，地名顯示使用 Apple 的地理編碼服務；我們不會把位置存到自己的伺服器、不販售、不用於廣告，可隨時在 iOS 設定中關閉。天氣資料由 Apple WeatherKit 提供，建議僅供參考。App 內購買由 Apple 透過 App Store 處理，我們不會取得付款資料。設定、常用地點與解鎖狀態只存在你的裝置上，刪除 App 即一併清除。隱私問題請來信 <!--email_off-->hourstag.app@gmail.com<!--/email_off-->。Android 版（Google Play，package <code>com.alice51849.LumiWeather</code>）：無帳號、無廣告、無第三方分析或崩潰回報 SDK；只要求「大概位置」權限（不要求精確定位、不在背景定位），且僅在你主動按「使用目前位置」時才請求；天氣資料改由 MET Norway 提供，只以 HTTPS 加密傳送四捨五入到小數 4 位的座標（你的大概位置或你新增的地點），桌面 Widget 更新也相同；地名與地點搜尋改用裝置內建的 Android 地理編碼服務（多數裝置由 Google 提供），會收到座標或你輸入的搜尋文字。依 Google Play「資料安全性」的定義，Android 版會「收集」大概位置與地點搜尋文字，僅用於 App 功能、僅暫存處理，不存放在我們的伺服器、不販售、不分享，傳輸一律加密。我們不保留任何你的資料；裝置上的設定與地點可在 App 內刪除、清除 App 儲存空間或解除安裝即清除，資料相關請求請來信 <!--email_off-->hourstag.app@gmail.com<!--/email_off-->。App 內購買改由 Google Play Billing 處理，我們不會取得付款資料。無 Apple Watch／鎖定畫面小工具（改提供桌面 Widget）。</p>
   </div>
 </section>
 
