@@ -18,6 +18,13 @@
 - [Privacy policy](https://open.cait518.cc/lumi-weather-support/privacy.html)
 - [Support and FAQ](https://open.cait518.cc/lumi-weather-support/support.html)
 
+## Product fact cards
+
+- [Lumi Weather — product fact card (en)](https://open.cait518.cc/lumi-weather-support/about-lumi-weather-app.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+- [ルミのおてんき星 — product fact card (ja)](https://open.cait518.cc/lumi-weather-support/about-lumi-weather-app.ja.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+- [Lumi อากาศ — product fact card (th)](https://open.cait518.cc/lumi-weather-support/about-lumi-weather-app.th.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+- [Lumi Tempo — product fact card (pt-BR)](https://open.cait518.cc/lumi-weather-support/about-lumi-weather-app.pt-BR.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+
 ## Portfolio
 
 - [All public iOS apps](https://alice51849.github.io/ios-app-guide/apps/index.html)
