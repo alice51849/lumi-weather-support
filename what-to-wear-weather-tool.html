@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What should my kid wear today? Free weather outfit tool for parents</title>
-<meta name="description" content="Type in today's temperature, say whether it's raining and how windy it is, and get a quick what-to-wear list for your kid: layers, jacket or coat, and rain gear. Works in °F or °C, right in your browser.">
+<title>Weather Outfit Calculator: Enter Temperature, Rain &amp; Wind</title>
+<meta name="description" content="Enter the temperature, rain and wind and get a quick what-to-wear list for your commute or errands: layers, jacket or coat, and rain gear. Works in °F or °C, right in your browser.">
 <link rel="canonical" href="https://open.cait518.cc/lumi-weather-support/what-to-wear-weather-tool.html">
 <link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/lumi-weather-support/what-to-wear-weather-tool.html">
-<meta property="og:title" content="What should my kid wear today? Free weather outfit tool for parents">
-<meta property="og:description" content="Temperature, rain, wind in. Layers, jacket and rain gear out. A quick morning check for parents, in °F or °C.">
+<meta property="og:title" content="Weather Outfit Calculator: Enter Temperature, Rain &amp; Wind">
+<meta property="og:description" content="Temperature, rain, wind in. Layers, jacket and rain gear out. A quick check before you head out, in °F or °C.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://open.cait518.cc/lumi-weather-support/what-to-wear-weather-tool.html">
 <link rel="stylesheet" href="styles.css">
@@ -29,7 +29,7 @@
 .wt-card fieldset{border:0;margin:0 0 16px;padding:0;min-width:0}
 .wt-card legend,.wt-label{display:block;font-weight:650;margin:0 0 8px;padding:0}
 .wt-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.wt-temp{font:inherit;font-size:22px;width:7.5ch;padding:8px 10px;border-radius:12px;border:1px solid rgba(128,128,128,.5);background:transparent;color:inherit}
+.wt-temp{font:inherit;font-size:22px;width:7.5ch;padding:8px 10px;border-radius:12px;border:1px solid rgba(128,128,128,.5);background:none;color:inherit}
 .wt-range{flex:1 1 220px;min-width:0;accent-color:#3b82f6}
 .wt-pills{display:flex;flex-wrap:wrap;gap:8px}
 .wt-pills label{position:relative;display:inline-flex}
@@ -47,7 +47,7 @@
 .wt-out .wt-tips{margin:.9em 0 0;padding-left:1.15em;font-size:15px}
 @media (max-width:520px){.helpdoc .hd-specs th{display:block;padding-bottom:0}.helpdoc .hd-specs td{display:block;padding-top:2px}.wt-out dl{grid-template-columns:1fr}.wt-out dd{margin-bottom:6px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "What to wear for the weather: kids outfit tool", "url": "https://open.cait518.cc/lumi-weather-support/what-to-wear-weather-tool.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in the browser)", "inLanguage": "en-US", "author": {"@type": "Organization", "name": "Lumi Studio"}, "isAccessibleForFree": true}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Weather Outfit Calculator: Enter Temperature, Rain & Wind", "description": "Enter the temperature, rain and wind to get a what-to-wear list: layers, jacket or coat, shoes and rain gear, in °F or °C.", "url": "https://open.cait518.cc/lumi-weather-support/what-to-wear-weather-tool.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in the browser)", "inLanguage": "en-US", "author": {"@type": "Organization", "name": "Lumi Studio"}, "isAccessibleForFree": true}</script>
 <meta name="apple-itunes-app" content="app-id=6779552704">
 <link rel="manifest" href="/lumi-weather-support/manifest.webmanifest">
 <meta property="og:site_name" content="Lumi Weather: What to Wear">
@@ -60,8 +60,8 @@
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">This site is run by Lumi Studio, the developer of Lumi Weather. The app mentioned on this page is our own.</p>
 <main class="helpdoc">
 <p class="hd-nav"><a href="./">Support home</a><a href="outfit.html">Outfit guide</a><a href="help.html">Help &amp; FAQ</a><a href="privacy.html">Privacy policy</a></p>
-<h1>What should my kid wear today?</h1>
-<p class="lede">It's 7:40, shoes are half on, and someone is asking if they really need a jacket. Plug in the temperature, tap rain and wind, and you'll get a quick list: what goes on top, which jacket, and whether the rain boots come out. Nothing to install, and what you enter stays in your browser.</p>
+<h1>Weather outfit calculator: enter temperature, rain and wind</h1>
+<p class="lede">Heading out the door and not sure about the jacket? Plug in the temperature, tap rain and wind, and you'll get a quick list: what goes on top, which jacket, which shoes, and whether you need rain gear for the commute. Nothing to install, and what you enter stays in your browser.</p>
 
 <form class="wt-card" id="wt-form" aria-describedby="wt-form-note" onsubmit="return false">
   <div>
@@ -102,23 +102,23 @@
   <dl id="wt-list"></dl>
   <ul class="wt-tips" id="wt-tips"></ul>
 </section>
-<p class="wt-hint"><strong>Just a starting point.</strong> These are general suggestions, not medical or safety advice. Every kid runs a little warmer or colder, so adjust to how yours actually feels, and follow your school's or doctor's guidance.</p>
+<p class="wt-hint"><strong>Just a starting point.</strong> These are general suggestions, not medical or safety advice. Everyone runs a little warmer or colder, so adjust to how you actually feel and check the conditions around you before heading out.</p>
 
 <section id="how"><h2>How the tool decides</h2>
 <p>It starts from the temperature you enter. Wind makes cool days feel colder, so on days under 70°F it knocks off about 5°F for a breeze and 10°F for strong wind before picking a row. On warm days wind barely changes the outfit. If you entered a "feels like" temperature, leave wind on Calm so it isn't counted twice.</p>
 <table class="hd-specs"><tbody>
-<tr><th>80°F and up</th><td>T-shirt, shorts or a sundress, sneakers or sandals. Sun hat and a water bottle. At 90°F and up, plan on shade and water breaks.</td></tr>
+<tr><th>80°F and up</th><td>T-shirt, shorts or a light dress, sneakers or sandals. Sun hat and a water bottle. At 90°F and up, plan on shade and water breaks.</td></tr>
 <tr><th>75–79°F</th><td>Short sleeves and shorts. No jacket.</td></tr>
-<tr><th>65–74°F</th><td>T-shirt with a light hoodie or long-sleeve layer they can tie around their waist by recess.</td></tr>
+<tr><th>65–74°F</th><td>T-shirt with a light hoodie or long-sleeve layer you can take off by midday.</td></tr>
 <tr><th>55–64°F</th><td>Long sleeves, long pants, and a light jacket or fleece.</td></tr>
 <tr><th>45–54°F</th><td>Long sleeves plus a sweater or fleece, under a medium-weight jacket. Closed-toe shoes.</td></tr>
 <tr><th>32–44°F</th><td>Warm layer under a winter coat. Add a hat and gloves once it's below 40°F.</td></tr>
 <tr><th>20–31°F</th><td>Base layer, warm mid layer, heavy winter coat, hat, gloves or mittens, scarf or neck gaiter, warm socks and boots.</td></tr>
 <tr><th>Below 20°F</th><td>All of the above with a thermal base layer and snow pants. Cover ears, hands and face, and keep outdoor time short.</td></tr>
 </tbody></table>
-<p><strong>Rain:</strong> "Might rain" means pack an umbrella or a packable rain jacket. "Raining" means a hooded rain jacket (or a waterproof coat on cold days), rain boots or waterproof shoes, and a spare pair of socks in the backpack. At or below freezing, wet weather can turn into sleet or snow, so swap rain boots for insulated snow boots and pack waterproof mittens.</p>
+<p><strong>Rain:</strong> "Might rain" means pack an umbrella or a packable rain jacket. "Raining" means a hooded rain jacket (or a waterproof coat on cold days), rain boots or waterproof shoes, and a spare pair of socks in your bag. At or below freezing, wet weather can turn into sleet or snow, so swap rain boots for insulated snow boots and pack waterproof mittens.</p>
 <p><strong>Wind:</strong> a zip-up outer layer that blocks the wind beats a thicker sweater. When it's really windy and wet, a hood is easier than an umbrella that keeps flipping inside out.</p>
-<p><strong>Car seats:</strong> puffy winter coats can leave the harness too loose. Buckle kids in with a thinner layer and put the coat or a blanket on over the straps.</p>
+<p><strong>Commuting:</strong> on cold days, wear layers you can open or take off once you are on a warm bus or train or in a heated office, rather than one heavy sweater under the coat.</p>
 </section>
 
 <section id="app"><h2>Want this every morning without typing anything?</h2>
@@ -145,11 +145,11 @@ function wtAdvise(tempF, rain, wind, unit){
     r.head = "Hot one: keep it light";
     r.top = "T-shirt or tank top in a light, breathable fabric";
     r.outer = "None needed";
-    r.bottom = "Shorts or a sundress";
-    r.feet = "Sneakers or sandals that stay on for running around";
+    r.bottom = "Shorts or a light dress";
+    r.feet = "Sneakers or comfortable sandals";
     r.extras.push("Sun hat");
     r.bag.push("Water bottle");
-    if (f >= 90) { r.tips.push("In this kind of heat, plan on shade and water breaks, and keep an eye on how they're doing."); }
+    if (f >= 90) { r.tips.push("In this kind of heat, plan on shade and water breaks, and take it easy if you start to feel overheated."); }
   } else if (f >= 75) {
     r.head = "Short-sleeve weather";
     r.top = "T-shirt";
@@ -159,8 +159,8 @@ function wtAdvise(tempF, rain, wind, unit){
   } else if (f >= 65) {
     r.head = "T-shirt plus a light layer";
     r.top = "T-shirt";
-    r.outer = "Light hoodie or long-sleeve layer they can take off later";
-    r.bottom = "Shorts or light pants, whatever your kid prefers";
+    r.outer = "Light hoodie or long-sleeve layer you can take off later";
+    r.bottom = "Shorts or light pants";
     r.feet = "Sneakers";
   } else if (f >= 55) {
     r.head = "Long sleeves and a light jacket";
@@ -178,7 +178,7 @@ function wtAdvise(tempF, rain, wind, unit){
     r.head = "Winter coat time";
     r.top = "Long-sleeve shirt with a warm sweater or fleece";
     r.outer = "Winter coat";
-    r.bottom = "Long pants (leggings underneath if your kid runs cold)";
+    r.bottom = "Long pants (leggings or long underwear underneath if you run cold)";
     r.feet = "Closed-toe shoes or boots, warm socks";
     if (f < 40) { r.extras.push("Knit hat", "Gloves"); }
   } else if (f >= 20) {
@@ -195,7 +195,7 @@ function wtAdvise(tempF, rain, wind, unit){
     r.bottom = "Long underwear under pants";
     r.feet = "Insulated, waterproof boots and wool or thermal socks";
     r.extras.push("Hat that covers the ears", "Mittens (warmer than gloves)", "Neck gaiter or scarf over the face");
-    r.tips.push("Keep time outside short and check fingers, toes and ears when they come in.");
+    r.tips.push("Keep time outside short and warm up indoors if fingers, toes or ears go numb.");
   }
   var freezing = t <= 32;
   if (rain === "chance") {
@@ -205,7 +205,7 @@ function wtAdvise(tempF, rain, wind, unit){
     if (freezing) {
       r.outer += ", and make sure it's waterproof";
       r.feet = "Insulated, waterproof snow boots";
-      r.extras = r.extras.map(function(x){ return x === "Gloves" || x === "Gloves or mittens" ? "Waterproof mittens" : x; }); if (r.extras.join(" ").indexOf("Waterproof mittens") === -1) { r.extras.push("Waterproof mittens"); }
+      r.extras = r.extras.map(function(x){ return x === "Gloves" || x === "Gloves or mittens" || x === "Mittens (warmer than gloves)" ? "Waterproof mittens" : x; }); if (r.extras.join(" ").indexOf("Waterproof mittens") === -1) { r.extras.push("Waterproof mittens"); }
       r.tips.push("At or below freezing, wet weather can come down as sleet or snow, so dress for slush.");
     } else if (f < 45) {
       r.outer += ", ideally waterproof with a hood (or a rain shell over it)";
@@ -225,8 +225,8 @@ function wtAdvise(tempF, rain, wind, unit){
     if (f < 65) { r.tips.push("Wind makes it feel about " + (unit === "C" ? Math.round(-adj * 5 / 9) + "°C" : (-adj) + "°F") + " colder. A zip-up layer that blocks the wind helps more than a thicker sweater."); }
     if (wind === "windy" && f < 45 && r.extras.join(" ").indexOf("ear") === -1) { r.extras.push("Hat or ear warmers"); }
   }
-  if (f < 45) { r.tips.push("In the car seat, take the puffy coat off and put it over the buckled harness instead."); }
-  if (f >= 45 && f < 75) { r.tips.push("Cool mornings often warm up by afternoon. Layers they can peel off beat one heavy top."); }
+  if (f < 45) { r.tips.push("Heading for a heated bus, train or office? Layers you can open beat one thick sweater under the coat."); }
+  if (f >= 45 && f < 75) { r.tips.push("Cool mornings often warm up by afternoon. Layers you can peel off beat one heavy top."); }
   return r;
 }
 function fToC(f){ return Math.round((f - 32) * 5 / 9); }
@@ -258,7 +258,7 @@ function render(){
   sum.textContent = Math.round(r.feels) === Math.round(tempF) ? "Dressing for " + shown + "." : "With the wind, dressing for about " + shown + ".";
   var rows = [["Top", r.top], ["Jacket", r.outer], ["Bottoms", r.bottom], ["Shoes", r.feet]];
   if (r.extras.length) rows.push(["Add", r.extras.join(", ")]);
-  if (r.bag.length) rows.push(["In the backpack", r.bag.join(", ")]);
+  if (r.bag.length) rows.push(["In your bag", r.bag.join(", ")]);
   list.innerHTML = rows.map(function(x){ return "<dt>" + esc(x[0]) + "</dt><dd>" + esc(x[1]) + "</dd>"; }).join("");
   tips.innerHTML = r.tips.map(function(x){ return "<li>" + esc(x) + "</li>"; }).join("");
 }
